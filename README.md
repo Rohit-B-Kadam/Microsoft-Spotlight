@@ -1,6 +1,6 @@
 # Executable Dependence Wallet
 
-This project is used to locate targeted file in whole harddisk.
+This project is used to locate targeted file in whole harddisk in less time.
 
 - __Framework:__ Dot Net.
 - __Front End:__ Windows Presentation Foundation (WPF)
