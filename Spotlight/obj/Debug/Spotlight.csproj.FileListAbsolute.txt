@@ -1,0 +1,15 @@
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\bin\Debug\Spotlight.exe.config
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\bin\Debug\Spotlight.exe
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\bin\Debug\Spotlight.pdb
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight.csprojAssemblyReference.cache
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\MainWindow.g.cs
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\App.g.cs
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight_MarkupCompile.cache
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight_MarkupCompile.lref
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\MainWindow.baml
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight.g.resources
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight.Properties.Resources.resources
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight.csproj.GenerateResource.cache
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight.csproj.CoreCompileInputs.cache
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight.exe
+H:\Technology\Dot Net\Project\Spotlight\Spotlight\obj\Debug\Spotlight.pdb

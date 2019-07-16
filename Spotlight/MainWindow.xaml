@@ -1,0 +1,126 @@
+﻿<Window x:Class="Spotlight.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spotlight"
+        mc:Ignorable="d"
+        Title="Spotlight" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- First Row-->
+        <StackPanel Grid.Row="0" 
+                    Margin="10,10,0,0"
+                    x:Name="MyStackPanel"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    >
+            <Label
+                Margin="0,0,0,0"
+                FontSize="20" Content="FileName:"/>
+            <TextBox x:Name="txtFilePath"  
+                     Width="200" 
+                     Margin="15,5,0,5" 
+                     VerticalContentAlignment="Center"
+                     FontSize="18" 
+                     AllowDrop="True"
+                     Text="{Binding FilePath}" KeyUp="txtFilePath_KeyUp"
+                     />
+
+            <!-- Expender -->
+
+            <Label
+                Margin="50,0,0,0"
+                FontSize="20" Content="Search In:"/>
+
+            <ComboBox Name="comboBox1" Margin="5,0,0,0" IsReadOnly="true" ItemsSource="{Binding CheckBoxList}">
+
+            </ComboBox>
+
+            <Button Name="btnSearch1"  
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Width="100"
+                    Margin="50,2,0,2"
+                    FontSize="18"
+                    IsEnabled="{Binding EnableSearchBtn}"
+                    Click="StartSearch"
+                    Content="{Binding ButtonContent}"/>
+
+        </StackPanel>
+
+        <!-- Second Row-->
+        <!--
+        <StackPanel Grid.Row="1" 
+             x:Name="MyStackPane2"
+             Orientation="Horizontal"
+             VerticalAlignment="Center"
+             IsEnabled="{Binding EnableSearch}"
+             HorizontalAlignment="Center"
+                    >
+
+            <Button Name="btnSearch"  
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Width="150"
+                    Margin="90,2,0,2"
+                    FontSize="18"
+                    IsEnabled="{Binding EnableFindBtn}"
+                    Click="StartSearch"
+                    Content="Start Search"/>
+            <Button Name="btnReset"  
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Width="150"
+                    Margin="50,2,0,2"
+                    FontSize="18"
+                    IsEnabled="{Binding EnableResetBtn}"
+                    
+                    Content="Stop Search" >
+                <Button.ToolTip >Reset App</Button.ToolTip>
+            </Button>
+        </StackPanel>-->
+
+        <GridSplitter x:Name="gridSplitter" Grid.Row="1" Width="800" Height="3"/>
+
+        <!-- Fourth Row -->
+        <Grid Grid.Row="2" >
+
+            <Label x:Name="label" 
+                   Content="File found at:-" 
+                   HorizontalAlignment="Left" 
+                   Margin="10,10,0,0" 
+                   VerticalAlignment="Top"  
+                   Width="153" Height="43"
+                   FontSize="20"
+                   />
+            
+            <Label x:Name="label1" 
+                   Content="{Binding SearchStatus}" 
+                   HorizontalAlignment="right" 
+                   Margin="0,10,156.6,0" 
+                   VerticalAlignment="Top"  
+                   Height="40" Width="Auto"
+                   FontSize="14"/>
+
+            <!-- SelectedItem="{Binding Path=SelectedCustomer}"-->
+            <ListView ItemsSource="{Binding ListOfFoundFile}" Margin="10,50,10,10" 
+                      MouseDoubleClick="ListView_MouseDoubleClick"
+                      >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="Auto" Header="File Path" DisplayMemberBinding="{Binding FilePath}"  />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+    </Grid>
+</Window>
