@@ -1,4 +1,4 @@
-# Executable Dependence Wallet
+# MicroSoft SpotLight
 
 This project is used to locate targeted file in whole harddisk in less time.
 
